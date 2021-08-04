@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <view class="sea_input">
+      <image src="/images/search.svg"/>
+      <input type="text" placeholder="查词" disabled="{{true}}" bindtap="search"/>
+    </view>
+    <image src="/images/eamil.svg" class="sea_image" bindtap="sea_click"></image>
+  </view>
+  <view class="card" wx:if="{{flag}}">
+    <view class="head">
+      <view class="text1">设置学习计划范围</view>
+      <view class="text2">智能推荐资源，更快学习新词</view>
+      <button type="primary" class="btn" bindtap="click">选择课本</button>
+    </view>
+  </view>
+  <view class="card2" wx:else>
+      <view class="foot">
+        <view class="fo_title">{{clock?"今天打卡":"今日已打卡"}}</view>
+        <view class="title" bindtap="click">{{bookData.wordTextName}}  ></view>
+        <view class="fo_text">
+          <view class="text">今日计划</view>
+          <view class="number">
+            <view class="num_title">
+              <view class="num_text">需新学</view>
+              <view class="picker">
+                <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                  <text class="num">{{array[index]}}</text>
+                </picker>
+                <view style="margin-top:65rpx">词</view>
+              </view>
+            </view>
+            <view class="num_title">
+              <view class="num_text">需复习</view>
+              <text class="num">2</text>
+              <text>词</text>
+            </view>
+          </view>
+          <button type="primary" class="mun_btn" bindtap="toRecite">开始背单词吧！</button>
+        </view>
+      </view>
+  </view>
+  <view class="learn_process">
+    <view class="lea_title">学习进度</view>
+    <view class="card3">
+      <view class="lea_span" style="border-bottom:1px solid black;" bindtap="bind_learn">
+        <image src="/images/process.svg" />
+        <view>单词数量</view>
+      </view>
+      <view class="lea_span" bindtap="bind_word">
+        <image src="/images/word.svg" />
+        <view >学习进度</view>
+      </view>
+    </view>
+  </view>
+</view>

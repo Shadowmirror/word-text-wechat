@@ -1,0 +1,6 @@
+<view class="cha2_container">
+  <ec-canvas id="mychart2-dom-bar" style="width:100%;height:300px;" canvas-id="mychart2-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="cha2_container">
+  <ec-canvas id="mychart2-dom-multi-bar" style="width:100%;height:300px;" canvas-id="mychart2-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+</view>

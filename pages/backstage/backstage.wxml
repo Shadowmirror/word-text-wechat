@@ -1,0 +1,47 @@
+<!--pages/backstage/backstage.wxml-->
+<view class="back_container">
+    <view class="swiper-tab">
+        <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">你的课本</view>
+        <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">添加课本</view>
+    </view>
+
+    <view class="swiper" wx:if="{{currentTab==0}}" style="height:{{height}}px">
+        <view class="con_title">你可以设置自定义课本，并开始学习</view>
+        <view class="updata" hover-class="none" hover-stop-propagation="false">
+            <block wx:for="{{up_books}}" wx:key="item">
+                <view class="con_card">
+                    <view class="ca_name">
+                        <text class="ca_tx1">{{item.wordTextName}}</text>
+                        <text class="ca_tx2" bindtap="delete" data-key="{{item.wordTableName}}">删除</text>
+                    </view>
+                    <view class="ca_title">
+                        <view class="ca_tx3">{{item.wordTextDes}}</view>
+                    </view>
+                    <!-- <view class="ca_foot">
+                        <text>2021年6月28日</text>
+                    </view> -->
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="swiper" style="height:{{height}}px" wx:else>
+        <view class="con_card2">
+            <view class="cd_head">课本信息</view>
+            <view class="cd_name">
+                <view >课本名称</view>
+                <input type="text" placeholder="课本名称" model:value="{{name}}" />
+            </view>
+            <view class="cd_title">
+                <view >课本简介</view>
+                <textarea placeholder="课本简介" model:value="{{title}}" ></textarea>
+            </view>
+            <view class="cd_btn">
+                <view class="button" bindtap="cho_file">选择文件</view>
+                <view>说明：上传的文件，支持csv格式。</view>
+            </view>
+            <view class="cd_finish">
+                <button bindtap="hold">保存</button>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,112 @@
+/* pages/backstage/backstage.wxss */
+.swiper{
+    background-color:rgb(236,240,245);
+    padding:1px;
+}
+/* 滑动操作 */
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+    color:#ccc;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}
+.active{
+    color:black;
+    font-size:40rpx;
+    font-weight: bold;
+}
+.con_title{
+    text-align:center;
+    padding:30rpx 0;
+}
+.updata{
+    display:flex;
+    flex-wrap:wrap;
+}
+.con_card{
+    height:250rpx;
+    width:40%;
+    border:1px solid rgb(236,240,245);
+    margin:40rpx 30rpx;
+    background-color:white;
+    font-size:30rpx;
+    /* border-radius:10px; */
+}
+.con_card .ca_name{
+    border-bottom:1px solid rgb(236,240,245);
+    height:60rpx;
+    line-height:60rpx;
+}
+.ca_name .ca_tx1{
+    margin-right:80rpx;
+    margin-left:30rpx;
+    font-weight: bold;
+}
+.ca_name .ca_tx2{
+    font-weight:bold;
+    color:rgb(156, 159, 161);
+}
+.con_card .ca_title{
+    height:140rpx;
+}
+.ca_title .ca_tx3{
+    margin-top:30rpx;
+    margin-left:20rpx;
+}
+/* .ca_foot text{
+    margin-left:20rpx;
+} */
+/* 添加课本样式 */
+.con_card2{
+    height:1000rpx;
+    border:1px solid rgb(236,240,245);
+    margin:50rpx 20rpx;
+    background-color:white;
+}
+.con_card2 .cd_head{
+    font-size:40rpx;
+    font-weight:bold;
+    border-bottom:1px solid rgb(137, 143, 150);
+    padding:20rpx;
+}
+.con_card2 .cd_name{
+    margin:20rpx
+}
+.cd_name input{
+    border:1px solid rgb(137, 143, 150);
+    padding:10rpx;
+    margin-top:5rpx;
+}
+.con_card2 .cd_title{
+    margin:20rpx;
+}
+.cd_title textarea{
+    border:1px solid rgb(137, 143, 150);
+    padding:10rpx;
+    margin-top:5rpx;
+}
+.cd_btn{
+    margin:40rpx 20rpx;
+    font-size:30rpx;
+}
+.cd_btn .button{
+    height:80rpx;
+    width:200rpx;
+    background-color:rgb(137, 143, 150);
+    text-align:center;
+    line-height:80rpx;
+    margin:20rpx 0;
+} 
+.cd_finish button{
+    width:60%;
+    margin-bottom:30rpx
+}

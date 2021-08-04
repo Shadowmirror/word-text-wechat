@@ -1,0 +1,53 @@
+/* pages/search/search.wxss */
+
+/* 标题样式 */
+.sea_text{
+    height:80rpx;
+    display:flex;
+    border-bottom:1px solid black;
+    justify-content:space-around;
+}
+.sea_text image{
+    height:50rpx;
+    width:50rpx;
+    margin-top:10rpx;
+}
+/* 文本框 */
+.sea_textarea{
+    border-bottom:1px solid black;
+    position:relative;
+}
+.sea_textarea textarea{
+    padding:30rpx;
+}
+.sea_textarea .sea_btn{
+    display:flex; 
+    position:absolute;
+    right:40rpx;
+    bottom:20rpx;
+    z-index:99;
+}
+.sea_btn button{
+    width:150rpx;
+    margin:0 20rpx;
+    border-radius:50px;
+    background-color:rgb(201,233,254);
+    color:rgb(16,145,229);
+}
+/* 翻译结果 */
+.sea_tran{
+    margin-top:60rpx;
+    background-color:rgb(244,244,244);
+}
+.sea_tran .tran_text{
+    border-bottom:1px solid rgb(104, 65, 65);
+    padding:10rpx 20rpx;
+}
+.sea_tran .tran_result{
+    padding:30rpx;
+    font-weight:bold;
+}
+.sea_tran .tran_res{
+    font-size:35rpx;
+    margin:0 30rpx;
+}

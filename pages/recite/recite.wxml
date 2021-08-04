@@ -1,0 +1,22 @@
+<!--pages/recite/recite.wxml-->
+<view class="rec-container">
+    <scroll-view class="scroll-box" scroll-x="true" scroll-with-animation scroll-into-view="{{toView}}" bindtouchstart="touchStart" bindtouchend="touchEnd">
+        <view wx:for="{{words}}" wx:key="items" class="card_box" id="card{{index}}">
+            <view class="rec_card">
+                <view class="ca_title">学习</view>
+                <view class="ca_word">{{item[0]}}</view>
+                <view class="ca_mean">{{item[1]}}</view>
+                <view class="ca_foot">
+                    <view class="fo_left" bindtap="previous">
+                        <image src="/images/cry.svg"></image>
+                        <text >不认识</text>
+                    </view>
+                    <view class="fo_right" bindtap="next">
+                        <text>认识</text>
+                        <image src="/images/smile.svg"></image>
+                    </view>
+                </view>
+            </view> 
+        </view>
+    </scroll-view>
+</view>

@@ -1,0 +1,38 @@
+<!--pages/choose/choose.wxml-->
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">本地课本</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">在线课本</view>
+</view>
+
+<swiper current="{{currentTab}}" duration="300"  bindchange="swiperTab" style="height:{{height}}px">
+    <swiper-item>
+        <view class="chootain">
+            <view class="choo_text">背单词课本</view>
+            <view wx:for="{{localBooks}}" wx:key="index">
+                <view class="choocard" bindtap="choo_click2" bindlongpress="long_click" data-id="{{index}}">
+                    <image src="/images/{{((index) % 3) + 1}}.jpg"></image>
+                    <text class="title3">{{item.wordTextName}}</text>
+                    <view class="text">
+                        <view class="text1">{{item.wordTextName}}</view>
+                        <view class="text2">{{item.wordTextDes}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </swiper-item>
+    <swiper-item>
+        <view class="chootain">
+            <view class="ctext">推荐课本</view>
+            <view wx:for="{{books}}" wx:key="index">
+                <view class="choocard" bindtap="choo_click" data-id="{{index}}">
+                    <image src="/images/{{((index) % 3) + 1}}.jpg"></image>
+                    <text class="title3">{{item.wordTextName}}</text>
+                    <view class="text">
+                        <view class="text1">{{item.wordTextName}}</view>
+                        <view class="text2">{{item.wordTextDes}}</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </swiper-item>
+</swiper>

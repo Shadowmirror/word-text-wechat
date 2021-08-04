@@ -1,0 +1,6 @@
+<!--pages/chart/chart.wxml-->
+<view class="cha_container">
+  <ec-canvas id="mychart-dom-bar" style="width:100%;height:300px;" canvas-id="mychart-bar" ec="{{ ec }}"></ec-canvas>
+</view>
+<view class="cha_container">
+<ec-canvas id="mychart-dom-multi-bar" style="width:100%;height:300px" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas></view>

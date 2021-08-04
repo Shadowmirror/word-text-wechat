@@ -1,0 +1,55 @@
+/* tab样式 */
+.swiper-tab{
+    width: 100%;
+    border-bottom: 2rpx solid #ccc;
+    text-align: center;
+    height: 88rpx;
+    line-height: 88rpx;
+    display: flex;
+    flex-flow: row;
+    color:#ccc;
+}
+.swiper-tab-item{
+    width: 30%; 
+    color:#434343;
+}
+.active{
+    color:black;
+    font-size:40rpx;
+    font-weight: bold;
+}
+/* 卡片样式 */
+.choo_text{
+    font-size:40rpx;
+    font-weight: bold;
+    padding:30rpx;
+}
+.choocard{
+    padding:30rpx;
+    display:flex;
+    border-bottom:1px solid black;
+}
+.choocard image{
+    height:240rpx;
+    width:160rpx;
+    border-radius: 10rpx;
+    padding-right:30rpx;
+    position:relative;
+}
+.choocard .title3{
+    position:absolute;
+    color:white;
+    left:50rpx;
+    width:150rpx;
+    word-wrap: break-word;
+}
+.choocard .text .text1{
+    font-size:40rpx;
+    font-weight:bolder;
+    margin-bottom:50rpx;
+}
+.chootain .ctext{
+    font-size:40rpx;
+    font-weight:bold;
+    padding:40rpx;
+}

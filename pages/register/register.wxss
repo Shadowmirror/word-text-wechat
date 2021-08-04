@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+.header{
+    height:200rpx;
+    text-align:center;
+    margin-top:30rpx;
+}
+.header image{
+    height:100rpx;
+    width:100rpx;
+}
+.fologin{
+    margin:20rpx 50rpx;
+}
+input{
+    border-bottom:1px solid black;
+    margin-bottom:30rpx;
+    padding-top:30rpx;
+}
+.checked{
+    border-bottom: 2px solid #0F996B;
+    border-bottom-left-radius: 1px;
+    border-bottom-right-radius: 1px;
+    margin-bottom:30rpx;
+    padding-top:30rpx;
+}
+.fologin button{
+    margin-top:50rpx;
+}
+.fologin .forget{
+    text-align:right;
+    width:100%;
+    margin-bottom:30rpx;
+}
+.fologin .filemin{
+    font-size:27rpx;
+}
+.fologin .filemin text{
+    color:rgb(61, 61, 228);
+}

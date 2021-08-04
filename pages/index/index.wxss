@@ -1,0 +1,128 @@
+/* 搜索框 */
+.search{
+    display:flex;
+    margin:0 40rpx;
+}
+.search .sea_input{
+    display:flex;
+    width:80%;
+    border: 1px solid #575756;
+    border-radius: 50px;
+    background-color:rgb(236,237,239);
+}
+.sea_input input{
+    padding:10rpx;
+}
+.sea_input image{
+    height:65rpx;
+    width:65rpx;
+}
+.sea_image{
+    height:80rpx;
+    width:80rpx;
+    padding-left:30rpx;
+}
+/* 没有单词本的页面 */
+.card{  
+    height:500rpx;
+    border:1px solid rgb(243, 230, 230);
+    margin:30rpx;
+    margin-top:200rpx;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.head{
+    margin-top:150rpx;
+}
+.head .text1{
+    font-size:35rpx;
+    font-weight: bold;
+}
+.head .text2{
+    font-size:30rpx;
+    padding:20rpx 0;
+}
+.head .btn{
+    width:70%;
+    margin-top:40rpx;
+    background-color:purple;
+}
+/* 有单词本的页面 */
+.card2{
+    height:750rpx;
+    border:1px solid rgb(243, 230, 230);
+    margin:30rpx;
+    margin-top:100rpx;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.foot{
+    padding:40rpx;
+}
+.foot .fo_title{
+    color:#615d5d;
+    padding-bottom:20rpx;
+    font-size:30rpx;
+    border-bottom:1px solid rgb(116, 112, 112);
+}
+.foot .title{
+    font-size:45rpx;
+    font-weight: bold;
+    padding:30rpx 0;
+}
+.foot .fo_text .text{
+    font-size:40rpx;
+    padding:40rpx 0;
+}
+.fo_text .number{
+    display:flex;
+    margin-bottom:40rpx;
+}
+.number .num_title{
+    padding:10rpx 100rpx 40rpx 0;
+}
+.num_text{
+    font-size:30rpx;
+}
+.picker{
+    display:flex;
+}
+.num2{
+    font-size:80rpx;
+}
+.number .num{
+    font-weight:bolder;
+    font-size:100rpx;
+    font-style:italic;
+    padding:10rpx;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.fo_text .mun_btn{
+    width:80%;
+    background-color:purple;
+    font-size:40rpx;
+}
+/* 学习进度 */
+.learn_process .lea_title{
+    margin-top:50rpx;
+    font-size:50rpx;
+    font-weight: bold;
+    margin-left:30rpx;
+}
+.card3{
+    height:200rpx;
+    border:1px solid rgb(243, 230, 230);
+    margin:30rpx;
+    margin-top:30rpx;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card3 .lea_span{
+    height:100rpx;
+    margin:0 20rpx;
+    display:flex;
+    line-height:100rpx;
+}
+.card3 image{
+    width: 50rpx;
+    height: 50rpx;
+    margin: 20rpx 30rpx 10rpx 20rpx;
+}

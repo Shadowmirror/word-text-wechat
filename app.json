@@ -1,0 +1,21 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/choose/choose",
+    "pages/search/search",
+    "pages/recite/recite",
+    "pages/backstage/backstage",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/chart/chart",
+    "pages/chart2/chart2"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "单词",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

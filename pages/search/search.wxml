@@ -1,0 +1,22 @@
+<!--pages/search/search.wxml-->
+<view class="sea_search">
+    <view class="sea_text">
+        <text>English</text>
+        <image src="/images/change.svg"></image>
+        <text>简体中文</text>
+    </view>
+    <view class="sea_textarea">
+        <form bindsubmit="mysubmit" bindreset="myreset">
+            <textarea placeholder="请输入需要查找的内容" name="textarea"/>
+            <view class="sea_btn">
+                <button form-type="reset">清空</button>
+                <button form-type="submit">翻译</button>
+            </view>
+        </form>
+    </view>
+    <view class="sea_tran" hidden="{{hidden}}">
+        <view class="tran_text">译文</view>
+        <view class="tran_result">{{oneWord}}</view>
+        <view class="tran_res">{{words}}</view>
+    </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/login/login.wxml-->
+<view class="container">
+  <view class="header">
+    <image src="https://th.bing.com/th/id/R1bd4b2c838d76f357faf08d8e5b6a911?rik=C6Ix7u%2fGqzDWIw&riu=http%3a%2f%2fis4.mzstatic.com%2fimage%2fthumb%2fPurple7%2fv4%2f80%2f14%2f0e%2f80140e98-25af-9301-dcb1-4906217f87ce%2fsource%2f1200x630bb.jpg&ehk=r9sEJ43tRNS3W2LwR7RuXhLnmQw48qQCUvtPp4UnVx4%3d&risl=&pid=ImgRaw"></image>
+    <view>注册学习账号</view>
+  </view>
+  <view class="fologin">
+      <form bindsubmit="submit">
+        <input type="text" name="username" placeholder="Email地址/用户名" bindfocus="focus" />
+        <input type="password" name="password" placeholder="密码" />
+        <button type="primary" form-type="submit">注册</button>
+      </form>
+  </view>
+</view>
